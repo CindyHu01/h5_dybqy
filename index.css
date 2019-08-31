@@ -308,8 +308,32 @@ footer{
 .fixed{
     position: fixed;
     bottom: 0;
+    animation: up .5s;
+    -webkit-animation: up .5s;	/* Safari 和 Chrome */
 }
 
 .canva{
     height: 1.76rem;
+}
+
+@keyframes up
+{
+from {
+    opacity: .2;
+    bottom: -2rem;
+}
+to {
+    bottom: 0;
+}
+}
+
+@-webkit-keyframes up /* Safari 和 Chrome */
+{
+        from {
+            opacity: .2;
+            bottom: -2rem;
+        }
+        to {
+            bottom: 0;
+        }
 }
