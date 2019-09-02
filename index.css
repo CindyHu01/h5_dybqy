@@ -242,7 +242,6 @@ section{
     font-size: .28rem;
     font-family: SourceHanSansCN-Normal;
     margin-top:.48rem;
-    margin-bottom: .58rem;
 }
 /* .expand.strentch1{
     margin-bottom: 1.04rem;
@@ -272,8 +271,9 @@ section{
     font-size: .24rem;
     text-align: left;
     font-family: SourceHanSansCN-Bold;
-    padding:0 .3rem 1.12rem .56rem;
+    padding:0 .3rem 0 .56rem;
     transition: all 1s;
+    margin-top:.58rem;
 }
 .statement .jbys{
     margin-top:2em;
@@ -311,9 +311,11 @@ footer{
     animation: up .5s;
     -webkit-animation: up .5s;	/* Safari 和 Chrome */
 }
-
+#app{
+    padding-bottom:57px;
+}
 .canva{
-    height: 1.76rem;
+    height: 1.32rem;
 }
 
 @keyframes up

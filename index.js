@@ -2,6 +2,7 @@ window.onload = function(){
     var expandBtn = document.getElementById('expand-btn');
     var statement = document.getElementById('statement');
     var submitBtn = document.getElementById('submitBtn');
+    var canva = document.getElementById('canva');
 
     var startY = 0;
     var endY = 0;
@@ -38,6 +39,7 @@ window.onload = function(){
             submitDisp = true;
             document.body.ontouchmove = null;
             document.body.ontouchstart = null;
+            canva.classList.remove('hidden');
         }
     }
 }
