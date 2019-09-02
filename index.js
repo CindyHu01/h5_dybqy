@@ -3,7 +3,7 @@ window.onload = function(){
     var statement = document.getElementById('statement');
     var submitBtn = document.getElementById('submitBtn');
     var canva = document.getElementById('canva');
-
+    var expandBtnParent = expandBtn.parentNode || expandBtn.parentElement; // W3C:parentNode;IE:parentElement
     var startY = 0;
     var endY = 0;
     var moveY = 0;
@@ -13,7 +13,7 @@ window.onload = function(){
         window.location.href = "https://mbinvest.tebon.com.cn/app_share/screenshot/hxApp.html";
     }
 
-    expandBtn.parentElement.onclick = function(ev){
+    expandBtnParent.onclick = function(ev){
         if(expandBtn.className == 'closed'){
             expandBtn.classList.remove('closed');
             expandBtn.classList.add('open');

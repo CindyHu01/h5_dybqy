@@ -205,7 +205,8 @@ section{
     color: rgba(91, 92, 94, 1);
     font-size: .24rem;
     font-family: PingFangSC-Regular;
-    margin-left: .1rem
+    margin-left: .1rem;
+    display: block;
 }
 .prof span:last-child{
     line-height: .5rem;
