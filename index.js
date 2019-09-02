@@ -13,7 +13,7 @@ window.onload = function(){
         window.location.href = "https://mbinvest.tebon.com.cn/app_share/screenshot/hxApp.html";
     }
 
-    expandBtn.onclick = function(ev){
+    expandBtn.parentElement.onclick = function(ev){
         if(expandBtn.className == 'closed'){
             expandBtn.classList.remove('closed');
             expandBtn.classList.add('open');
